@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import viteLogo from '/vite.svg'
-import '../App.css'
+//import '../App.css'
 import MyBtn01 from '../Components/myBtn01.jsx'
 
 function Home() {
@@ -21,21 +21,21 @@ function Home() {
         </div>
         <h1>Vite + React</h1>
         <div className="card">
-            <MyBtn01 />
+            <MyBtn01  className='mx-auto my-2 w-75'/>
             <MyBtn01 />
             <MyBtn01 />
             <p>
             Edit <code>src/App.jsx</code> and save to test HMR
             </p>
         </div>
-        <p className="read-the-docs">
+        <p > 
             Click on the Vite and React logos to learn more
         </p>
-        <ol>
+        <ul className='list-group'>
             {myAry.map((ele,idx)=>(
-            <li>{ele}</li>
+            <li className="list-group-item">{ele}</li>
             ))}
-        </ol>
+        </ul>
   </div>
   )
 }

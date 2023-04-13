@@ -6,7 +6,9 @@ function MyBtn01() {
     const myFun = () => setCount(count+1);
     return (
         <div>
-            <button onClick={myFun}>count is {count}</button>
+            <button className="btn btn-dark" onClick={myFun}>
+                count is {count}
+            </button>
         </div>
     )
 }
